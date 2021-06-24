@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.MainPageController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="621.0">
+         <image>
+            <Image url="@../images/lakeyukonsplash-1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="travelerButton" layoutX="176.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#displayTravelersHomePage" prefHeight="47.0" prefWidth="104.0" style="-fx-background-color: #2395d6;" text="Traveler" textFill="WHITE">
+         <font>
+            <Font name="Maiandra GD" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="workerButton" layoutX="308.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#displayWorkersHomePage" prefHeight="47.0" prefWidth="104.0" style="-fx-background-color: #2395d6;" text="Worker" textFill="WHITE">
+         <font>
+            <Font name="Maiandra GD" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text fontSmoothingType="LCD" layoutX="13.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To create Beautiful moments of Life." wrappingWidth="594.6708984375">
+         <font>
+            <Font name="Segoe UI Semilight Italic" size="39.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="48.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature lets you invite tickets in a simple way to save your time." wrappingWidth="525.6709035336971">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="23.0" fitWidth="61.0" layoutX="550.0" layoutY="3.0">
+         <image>
+            <Image url="@../images/Gonature%20engelsk%202-1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exitButton" fitHeight="60.0" fitWidth="61.0" layoutX="-6.0" layoutY="426.0" onMouseClicked="#exitAndClose">
+         <image>
+            <Image url="@../images/exit-1639699-1391197.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="548.0" layoutY="429.0" onMouseClicked="#openAboutPage">
+         <image>
+            <Image url="@../images/icons8-information-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="#000000ba" fontSmoothingType="LCD" layoutX="228.0" layoutY="253.0" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Loggin As:" wrappingWidth="132.0380859375">
+         <font>
+            <Font name="Maiandra GD" size="29.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="541.0" layoutY="496.0" onMouseClicked="#openAboutPage" strokeType="OUTSIDE" strokeWidth="0.0" text="About us" wrappingWidth="78.67090353369713">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="12.0" layoutY="496.0" onMouseClicked="#exitAndClose" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit" wrappingWidth="35.67090353369713">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+   </children>
+</Pane>

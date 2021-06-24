@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="621.0" style="-fx-background-color: #e0ebe8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.TravelerMyOrdersController">
+   <children>
+      <TableView fx:id="ordersTable" editable="true" layoutX="69.0" layoutY="92.0" prefHeight="60.0" prefWidth="483.0" style="-fx-control-inner-background: #e0ebe8; -fx-control-inner-background-alt: #b9e7da;">
+        <columns>
+          <TableColumn fx:id="orderNumberColumn" prefWidth="46.400028228759766" text="No." />
+          <TableColumn fx:id="parkColumn" prefWidth="75.20001220703125" text="Park" />
+            <TableColumn fx:id="statusColumn" prefWidth="140.0" text="Status" />
+            <TableColumn fx:id="dateColumn" prefWidth="113.0" text="Date" />
+            <TableColumn fx:id="timeColumn" prefWidth="106.0" text="Time" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="23.0" fitWidth="61.0" layoutX="560.0" layoutY="2.0">
+         <image>
+            <Image url="@../images/Gonature%20engelsk%202-1.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="246.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Orders" underline="true" wrappingWidth="128.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="cancelOrderButton" layoutX="467.0" layoutY="433.0" mnemonicParsing="false" onMouseClicked="#removeTravelerOrder" prefHeight="33.0" prefWidth="116.0" style="-fx-background-color: #e01d1d;" text="Cancel Order" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="goBackButton" fitHeight="60.0" fitWidth="60.0" layoutX="7.0" layoutY="433.0" onMouseClicked="#goBack">
+         <image>
+            <Image url="@../images/icons8-arrow-pointing-left-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="500.0" prefWidth="621.0" style="-fx-background-color: #e0ebe8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.TravelerNewOrderOptionsPageController">
+   <children>
+      <ImageView fitHeight="23.0" fitWidth="61.0" layoutX="558.0" layoutY="3.0">
+         <image>
+            <Image url="@../images/Gonature%20engelsk%202-1.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#66bfbf" layoutX="195.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Order Type">
+         <font>
+            <Font name="Kristen ITC" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="singleInvitation" layoutX="117.0" layoutY="243.0" mnemonicParsing="false" onMouseClicked="#displayNewOrderPage" prefHeight="48.0" prefWidth="203.0" style="-fx-background-color: #66bfbf;" text="Subscriber invitation" textFill="WHITE">
+         <font>
+            <Font name="Kristen ITC" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView layoutX="178.0" layoutY="165.0">
+         <image>
+            <Image url="@../images/icons8-person-80.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="groupInvitation" layoutX="333.0" layoutY="243.0" mnemonicParsing="false" onMouseClicked="#displayNewOrderPage" prefHeight="48.0" prefWidth="203.0" style="-fx-background-color: #66bfbf;" text="Group invitation" textFill="WHITE">
+         <font>
+            <Font name="Kristen ITC" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView layoutX="386.0" layoutY="173.0">
+         <image>
+            <Image url="@../images/icons8-family-80.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backToTravelerHomePage" fitHeight="60.0" fitWidth="60.0" layoutY="440.0" onMouseClicked="#displayHomePage">
+         <image>
+            <Image url="@../images/icons8-arrow-pointing-left-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="230.0" fitWidth="247.0" layoutX="187.0" layoutY="341.0">
+         <image>
+            <Image url="@../images/gummy-camping.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

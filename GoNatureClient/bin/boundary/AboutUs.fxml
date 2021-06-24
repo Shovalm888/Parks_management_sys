@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="621.0" style="-fx-background-color: #e0ebe8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.AboutUsController">
+   <children>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="240.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About us" wrappingWidth="118.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="24.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="240.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ort Braude, Karmiel, Snunit St 51" wrappingWidth="252.24560546875">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="23.0" fitWidth="61.0" layoutX="558.0" layoutY="3.0">
+         <image>
+            <Image url="@../images/Gonature%20engelsk%202-1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="goBack" fitHeight="60.0" fitWidth="60.0" layoutX="8.0" layoutY="436.0" onMouseClicked="#goBack">
+         <image>
+            <Image url="@../images/icons8-arrow-pointing-left-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="75.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" underline="true" wrappingWidth="88.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="75.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activity hours:" underline="true" wrappingWidth="147.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="240.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8:00 - 17:00" wrappingWidth="252.24560546875">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="75.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activity days:" underline="true" wrappingWidth="147.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="240.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All the week" wrappingWidth="252.24560546875">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="75.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number:" underline="true" wrappingWidth="147.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="240.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1-700-506-272" wrappingWidth="252.24560546875">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="75.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gonature team:" underline="true" wrappingWidth="147.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="240.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Michel Abou Guy Hazut Daniel Tau Shoval Moshe Alon Israel " wrappingWidth="118.92767257243395">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="240.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kareen Kanboura" wrappingWidth="252.24560546875">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

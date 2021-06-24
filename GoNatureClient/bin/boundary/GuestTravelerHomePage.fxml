@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.GuestTravelerHomePageController">
+   <children>
+      <ImageView fitHeight="108.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/parkImage.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="newOrderButton" layoutX="1.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#displayNewOrderTravelerPage" prefHeight="66.0" prefWidth="150.0" text="New Order">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/order.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text layoutX="161.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome,">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="travelerFirstNameOutput" layoutX="244.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guest">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="539.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#displayMainPage" text="Log out" />
+      <ListView layoutX="151.0" layoutY="102.0" prefHeight="361.0" prefWidth="374.0" />
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="14.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/facebook.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="42.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/instagram.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="70.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/twitter.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="12.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visit us in social media for more information." wrappingWidth="95.05731201171875" />
+      <Button layoutX="530.0" layoutY="130.0" mnemonicParsing="false" opacity="0.0" text="Cancel Order" />
+   </children>
+</Pane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="621.0" style="-fx-background-color: #5DADE2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.DepartmentManagerOrderSubmitionController">
+   <children>
+      <Pane layoutX="43.0" layoutY="34.0" prefHeight="510.0" prefWidth="536.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Text fill="#5dade2" fontSmoothingType="LCD" layoutX="163.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order submission" wrappingWidth="209.92767333984375">
+               <font>
+                  <Font name="Kristen ITC" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#5dade2" layoutX="35.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casual invitation" underline="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="submitButton" layoutX="180.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#submitNewOrder" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #5DADE2;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Line endX="-297.0" endY="176.0" layoutX="333.0" layoutY="195.0" startX="159.0" startY="176.0" stroke="#5dade2" strokeWidth="3.0" style="-fx-stroke-dash-array: 10;" />
+            <Text fontSmoothingType="LCD" layoutX="35.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Park:" wrappingWidth="40.24560546875">
+               <font>
+                  <Font name="Maiandra GD" size="17.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="35.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="52.44726651906967">
+               <font>
+                  <Font name="Maiandra GD" size="17.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="35.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time:" wrappingWidth="52.44726651906967">
+               <font>
+                  <Font name="Maiandra GD" size="17.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="35.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order type:" wrappingWidth="94.4472666978836">
+               <font>
+                  <Font name="Maiandra GD" size="17.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="35.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of visitors:" wrappingWidth="149.99999803304672">
+               <font>
+                  <Font name="Maiandra GD" size="17.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="35.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Traveler ID:" wrappingWidth="94.44726884365082">
+               <font>
+                  <Font name="Maiandra GD" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="34.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total cost:">
+               <font>
+                  <Font name="Maiandra GD" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="orderPrice" layoutX="146.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Maiandra GD" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fx:id="goBackButton" fitHeight="60.0" fitWidth="60.0" layoutX="-3.0" layoutY="524.0" onMouseClicked="#goBackToWorkerPage">
+         <image>
+            <Image url="@../images/icons8-arrow-pointing-left-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fx:id="id" fontSmoothingType="LCD" layoutX="234.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="324.24560546875">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="parkName" fontSmoothingType="LCD" layoutX="234.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="324.245614528656">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="date" fontSmoothingType="LCD" layoutX="234.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="324.245614528656">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="time" fontSmoothingType="LCD" layoutX="234.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="324.245614528656">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="visitorsNumber" fontSmoothingType="LCD" layoutX="234.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="324.245614528656">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="orderType" fontSmoothingType="LCD" layoutX="234.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="324.245614528656">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

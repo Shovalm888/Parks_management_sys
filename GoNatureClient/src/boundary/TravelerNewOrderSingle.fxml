@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="621.0" style="-fx-background-color: #e0ebe8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.TravelerNewOrderSingleController">
+   <children>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="243.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New order" underline="true" wrappingWidth="135.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="24.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="188.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Park name" wrappingWidth="94.24560546875">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font></Text>
+      <ChoiceBox fx:id="parkOptions" layoutX="188.0" layoutY="105.0" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <DatePicker fx:id="selectedDate" layoutX="188.0" layoutY="172.0" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <TextField fx:id="emailTextInput" layoutX="188.0" layoutY="309.0" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <ChoiceBox fx:id="timeOptions" layoutX="188.0" layoutY="241.0" prefWidth="225.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Button fx:id="checkNewOrder" layoutX="215.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#checkNewOrder" prefHeight="44.0" prefWidth="171.0" style="-fx-background-color: #66bfbf;" text="Check availability" textFill="WHITE">
+         <font>
+            <Font name="Kristen ITC" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fx:id="cancelImage" fitHeight="60.0" fitWidth="60.0" layoutX="4.0" layoutY="438.0" onMouseClicked="#cancelAndCloseWindow">
+         <image>
+            <Image url="@../images/icons8-cancel-128.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="61.0" layoutX="558.0" layoutY="3.0">
+         <image>
+            <Image url="@../images/Gonature%20engelsk%202-1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="177.0" fitWidth="171.0" layoutX="449.0" layoutY="319.0">
+         <image>
+            <Image url="@../images/clipart2062133.png" />
+         </image>
+      </ImageView>
+      <Text fill="RED" layoutX="188.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="198.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Date" wrappingWidth="103.4472666978836">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="188.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="198.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Time" wrappingWidth="103.4472666978836">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="188.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="198.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="52.447266697883606">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="188.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="parkNameError" fill="#e12929" layoutX="311.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Required field" visible="false">
+         <font>
+            <Font name="Segoe UI Semilight" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="dateError" fill="#e12929" layoutX="311.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Required field" visible="false">
+         <font>
+            <Font name="Segoe UI Semilight" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="timeError" fill="#e12929" layoutX="311.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Required field" visible="false">
+         <font>
+            <Font name="Segoe UI Semilight" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailError" fill="#e12929" layoutX="311.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Required field" visible="false">
+         <font>
+            <Font name="Segoe UI Semilight" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

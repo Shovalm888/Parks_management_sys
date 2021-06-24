@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="1008.0" style="-fx-background-color: #5DADE2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.ParkManagerRequestsPageController">
+   <children>
+      <Text fx:id="park" fill="WHITE" layoutX="462.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" underline="true">
+         <font>
+            <Font name="Kristen ITC" size="24.0" />
+         </font>
+      </Text>
+      <Pane layoutX="19.0" layoutY="42.0" prefHeight="552.0" prefWidth="970.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Text fill="#5dade2" fontSmoothingType="LCD" layoutX="411.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My requests" wrappingWidth="147.92767333984375">
+               <font>
+                  <Font name="Kristen ITC" size="24.0" />
+               </font>
+            </Text>
+            <TableView fx:id="requestsTable" layoutX="17.0" layoutY="63.0" prefHeight="469.0" prefWidth="937.0" style="-fx-background-color: #f7f7f7;">
+              <columns>
+                <TableColumn fx:id="noColumn" editable="false" prefWidth="37.333373069763184" text="No." />
+                  <TableColumn fx:id="dataColumn" editable="false" prefWidth="410.3999710083008" text="Request Details" />
+                  <TableColumn fx:id="typeColumn" prefWidth="103.0" text="Request Type" />
+                  <TableColumn fx:id="valueColumn" prefWidth="48.0" text="Value" />
+                  <TableColumn fx:id="fromColumn" prefWidth="51.0" text="From" />
+                  <TableColumn fx:id="statusColumn" editable="false" prefWidth="99.0" text="Status" />
+                  <TableColumn fx:id="dateColumn" editable="false" prefWidth="89.0" text="Date" />
+                  <TableColumn fx:id="timeColumn" editable="false" prefWidth="96.0" text="Time" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <ImageView fx:id="goBackButton" fitHeight="60.0" fitWidth="60.0" layoutX="-3.0" layoutY="586.0" onMouseClicked="#goBack">
+         <image>
+            <Image url="@../images/icons8-arrow-pointing-left-100.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</Pane>

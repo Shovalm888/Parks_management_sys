@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="621.0" style="-fx-background-color: #e0ebe8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.GuestNewOrderSubmitionController">
+   <children>
+      <Text fill="#66bfbf" fontSmoothingType="LCD" layoutX="157.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guest order submission" underline="true" wrappingWidth="291.92767333984375">
+         <font>
+            <Font name="Kristen ITC" size="24.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="47.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Park:" wrappingWidth="40.24560546875">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font></Text>
+      <Button fx:id="submitButton" layoutX="226.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#submitNewOrder" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: #66bfbf;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Kristen ITC" size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="23.0" fitWidth="61.0" layoutX="558.0" layoutY="3.0">
+         <image>
+            <Image url="@../images/Gonature%20engelsk%202-1.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="47.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total cost:">
+         <font>
+            <Font name="Maiandra GD" size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="141.0" fitWidth="136.0" layoutX="485.0" layoutY="488.0">
+         <image>
+            <Image url="@../images/clipart2062133.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="47.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="52.44726651906967">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="47.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time:" wrappingWidth="52.44726651906967">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="305.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email address:" wrappingWidth="110.4472666978836">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="parkName" fontSmoothingType="LCD" layoutX="123.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="322.0" layoutX="224.0" layoutY="431.0" startX="-150.0" style="-fx-stroke-dash-array: 10;" />
+      <Text fx:id="orderDate" fontSmoothingType="LCD" layoutX="123.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="orderTime" fontSmoothingType="LCD" layoutX="123.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="orderPrice" layoutX="161.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Maiandra GD" size="22.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="backToNewOrder" fitHeight="60.0" fitWidth="60.0" layoutY="566.0" onMouseClicked="#displayGuestNewOrderPage">
+         <image>
+            <Image url="@../images/icons8-arrow-pointing-left-100.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="47.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visitors:" wrappingWidth="59.99999803304672">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="305.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID number:" wrappingWidth="90.44726651906967">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="visitors" fontSmoothingType="LCD" layoutX="123.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="305.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name:" wrappingWidth="83.99999803304672">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="305.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name:" wrappingWidth="84.00000117905438">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="305.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number:" wrappingWidth="117.44726651906967">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#000000d0" fontSmoothingType="LCD" layoutX="47.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order details:" underline="true">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Text>
+      <Separator layoutX="258.0" layoutY="117.0" orientation="VERTICAL" prefHeight="282.0" prefWidth="6.0" style="-fx-background-color: #66bdbd90;" />
+      <Text fill="#000000d0" fontSmoothingType="LCD" layoutX="305.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal details:" underline="true">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="phoneNumber" fontSmoothingType="LCD" layoutX="425.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="187.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="orderEmail" fontSmoothingType="LCD" layoutX="425.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="187.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="lastName" fontSmoothingType="LCD" layoutX="425.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="187.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="firstName" fontSmoothingType="LCD" layoutX="425.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="187.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="idNumber" fontSmoothingType="LCD" layoutX="425.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="187.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="47.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment:" wrappingWidth="72.44726651906967">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="payment" fontSmoothingType="LCD" layoutX="123.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.0000066459179">
+         <font>
+            <Font name="Maiandra GD" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

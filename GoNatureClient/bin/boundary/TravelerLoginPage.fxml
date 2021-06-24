@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.TravelerLoginPageController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="621.0">
+         <image>
+            <Image url="@../images/lakeyukonsplash-1.jpg" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="100.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to GoNature" wrappingWidth="421.85400390625">
+         <font>
+            <Font name="Maiandra GD" size="41.0" />
+         </font>
+      </Text>
+      <TextField fx:id="identificationInput" layoutX="244.0" layoutY="186.0" opacity="0.55" prefHeight="43.0" prefWidth="307.0" promptText="Enter your id,subscription or invitation number:" style="-fx-border-color: #000000; -fx-background-color: #ffffff; -fx-border-width: 3; -fx-border-style: hidden hidden solid hidden;">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Text fx:id="identificationError" fill="#e12929" layoutX="45.0" layoutY="157.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Enter your identification number">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="loginByComboBox" layoutX="99.0" layoutY="191.0" prefHeight="33.0" prefWidth="138.0" promptText="Login by" style="-fx-background-color: #ffffff75; -fx-border-color: #000000; -fx-border-radius: 5; -fx-background-radius: 5;" visibleRowCount="3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Text fx:id="loginError" fill="#e12929" layoutX="45.0" layoutY="127.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* You need to select login by">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="loginButton" layoutX="100.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#checkIDNumber" prefHeight="43.0" prefWidth="451.0" style="-fx-border-radius: 5; -fx-border-color: #000000; -fx-background-color: #ffffff75; -fx-background-radius: 5;" text="Log in">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="goBackButton" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#returnToMainPage" style="-fx-background-color: null;" textFill="#bc4b4b">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="60.0">
+               <image>
+                  <Image url="@../images/icons8-arrow-pointing-left-100.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="23.0" fitWidth="61.0" layoutX="554.0" layoutY="3.0">
+         <image>
+            <Image url="@../images/Gonature%20engelsk%202-1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
