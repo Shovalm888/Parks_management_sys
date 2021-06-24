@@ -6,3 +6,4 @@ The system includes comfortable UI which simplify the system's use of for any us
 
 ## Users
 Each user have specific functions he can do based on the UC diagram:<br />
+![Alt text](/UC_Diagram.jpg "Optional title")
