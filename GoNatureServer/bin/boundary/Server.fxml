@@ -34,7 +34,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <TextField fx:id="dbPassword" layoutX="362.0" layoutY="223.0" text="Guy142536" />
+            <TextField fx:id="dbPassword" layoutX="362.0" layoutY="223.0" text="" />
             <Text layoutX="52.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server Details">
                <font>
                   <Font size="23.0" />
