@@ -10,3 +10,4 @@ Each user have specific functions he can do based on the UC diagram:<br /><br />
 
 ## Some of the results
 
+<img src="Traveler_Login_Page.jpg" width="250"> | <img src="Traveler_Home_Page_and_Server_log.jpg" width="250"> 
