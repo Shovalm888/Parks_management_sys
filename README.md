@@ -11,3 +11,5 @@ Each user have specific functions he can do based on the UC diagram:<br /><br />
 ## Some of the results
 
 <img src="Traveler_Login_Page.jpg" width="250"> | <img src="Traveler_Home_Page_and_Server_log.jpg" width="500"> 
+| <img src="Dept_Manager_Home_Page_and_Server_log.jpg" width="500"> | <img src="Park_Manager_Home_Page.jpg" width="250">
+| <img src="Visit_report.jpg" width="250">
